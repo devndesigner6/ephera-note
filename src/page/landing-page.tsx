@@ -60,10 +60,7 @@ export const LandingPage = () => {
       </div>
 
       <footer className="text-center text-neutral-600 text-sm sm:text-base dark:text-neutral-400">
-        This project is built by{" "}
-        <a href="https://x.com/unvalley_" className="text-blue-400 hover:underline">
-          unvalley
-        </a>
+        This project is made by hemanth
         <p>
           Source Code on{" "}
           <a href="https://github.com/devndesigner6/ephera-note" className="text-blue-400 hover:underline">
