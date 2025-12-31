@@ -102,7 +102,7 @@ export class DprintMarkdownFormatter implements MarkdownFormatter {
     }
 
     return this.formatter.formatText({
-      filePath: "ephe.md",
+      filePath: "ephera.md",
       fileText: text,
     });
   }

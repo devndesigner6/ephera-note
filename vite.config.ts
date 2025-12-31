@@ -22,11 +22,11 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       injectRegister: "inline",
-      includeAssets: ["ephe.svg", "ephe-192.png", "ephe-512.png"],
+      includeAssets: ["epherav1.94.svg", "epherav1.94-192.png", "epherav1.94-512.png"],
       manifest: {
-        name: "Ephe - Ephemeral Markdown Paper",
-        short_name: "Ephe",
-        description: "Ephe is an ephemeral markdown paper. Organize your day with ease.",
+        name: "Epherav1.94 - Creative Ephemeral Markdown Paper",
+        short_name: "Epherav1.94",
+        description: "Epherav1.94 is a creative ephemeral markdown paper. Organize your day with ease.",
         theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
@@ -35,19 +35,19 @@ export default defineConfig({
         start_url: "/",
         icons: [
           {
-            src: "ephe-192.png",
+            src: "epherav1.94-192.png",
             sizes: "192x192",
             type: "image/png",
             purpose: "any maskable",
           },
           {
-            src: "ephe-512.png",
+            src: "epherav1.94-512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "any maskable",
           },
           {
-            src: "ephe.svg",
+            src: "epherav1.94.svg",
             sizes: "any",
             type: "image/svg+xml",
             purpose: "any",

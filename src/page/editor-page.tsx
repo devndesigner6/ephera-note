@@ -9,7 +9,7 @@ import { DocumentDock } from "../features/editor/multi/dock-menu";
 import { SystemMenu } from "../features/menu/system-menu";
 import { HoursDisplay } from "../features/time-display/hours-display";
 import { Link } from "react-router-dom";
-import { EPHE_VERSION } from "../utils/constants";
+import { EPHERA_VERSION } from "../utils/constants";
 import { useCommandK } from "../utils/hooks/use-command-k";
 import { useEditorMode } from "../utils/hooks/use-editor-mode";
 import { useRef, useState, useEffect } from "react";
@@ -43,9 +43,9 @@ export const EditorPage = () => {
         singleEditorRef.current.setContent(restoredContent);
       }
     };
-    window.addEventListener("ephe:content-restored", handleContentRestored as EventListener);
+    window.addEventListener("ephera:content-restored", handleContentRestored as EventListener);
     return () => {
-      window.removeEventListener("ephe:content-restored", handleContentRestored as EventListener);
+      window.removeEventListener("ephera:content-restored", handleContentRestored as EventListener);
     };
   }, [editorMode]);
 
@@ -91,7 +91,7 @@ export const EditorPage = () => {
           <>
             <HoursDisplay />
             <FooterButton>
-              <Link to="/landing">Ephe v{EPHE_VERSION}</Link>
+              <Link to="/landing">Ephera v{EPHERA_VERSION}</Link>
             </FooterButton>
           </>
         }
