@@ -179,7 +179,7 @@ export const useHistoryData = (): HistoryData => {
       localStorage.setItem(LOCAL_STORAGE_KEYS.EDITOR_CONTENT, snapshot.content);
       // Dispatch a custom event instead of reloading
       window.dispatchEvent(
-        new CustomEvent("ephe:content-restored", {
+        new CustomEvent("ephera:content-restored", {
           detail: { content: snapshot.content },
         }),
       );

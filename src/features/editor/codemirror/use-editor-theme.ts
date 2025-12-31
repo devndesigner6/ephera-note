@@ -8,10 +8,10 @@ import { useMemo } from "react";
  */
 export const useEditorTheme = (isDarkMode: boolean, isWideMode: boolean, fontFamily: string) => {
   return useMemo(() => {
-    const COLORS = isDarkMode ? EPHE_COLORS.dark : EPHE_COLORS.light;
+    const COLORS = isDarkMode ? EPHERA_COLORS.dark : EPHERA_COLORS.light;
     const CODE_SYNTAX_HIGHLIGHT = isDarkMode ? SYNTAX_HIGHLIGHT_STYLES.dark : SYNTAX_HIGHLIGHT_STYLES.light;
 
-    const epheHighlightStyle = HighlightStyle.define([
+    const epheraHighlightStyle = HighlightStyle.define([
       ...CODE_SYNTAX_HIGHLIGHT,
 
       // Markdown Style
@@ -90,12 +90,12 @@ export const useEditorTheme = (isDarkMode: boolean, isWideMode: boolean, fontFam
 
     return {
       editorTheme: EditorView.theme(theme),
-      editorHighlightStyle: syntaxHighlighting(epheHighlightStyle, { fallback: true }),
+      editorHighlightStyle: syntaxHighlighting(epheraHighlightStyle, { fallback: true }),
     };
   }, [isDarkMode, isWideMode, fontFamily]);
 };
 
-const EPHE_COLORS = {
+const EPHERA_COLORS = {
   light: {
     background: "#FFFFFF",
     foreground: "#111111",

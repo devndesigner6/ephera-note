@@ -1,11 +1,11 @@
-Hi, here's your quick guide to _Ephe_.
+Hi, here's your quick guide to _Ephera_.
 
 Give me just one quiet minute.
 
 
 Every morning, my head feels noisy.  
 Ideas, todos, worries—all tangled.  
-So I built Ephe to help organize my mind.
+So I built Ephera to help organize my mind.
 
 Just one page.  
 A calm space.  
@@ -19,7 +19,7 @@ I write, and my mind feels lighter.
 That’s how I start my day.
 
 
-How to use Ephe?
+How to use Ephera?
 
 It stays out of your way, but helps where it counts:
 

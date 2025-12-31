@@ -4,13 +4,13 @@ export const LandingPage = () => {
       <div className="w-full max-w-lg space-y-12 sm:space-y-12">
         <div className="space-y-2 sm:space-y-2">
           <p className="">
-            <samp>Ephe</samp> is :
+            <samp>Ephera</samp> is :
           </p>
           <ol className="list-inside list-decimal">
             <li>A markdown paper to organize your daily todos and thoughts.</li>
             <li>
               <a
-                href="https://github.com/unvalley/ephe"
+                href="https://github.com/devndesigner6/ephera-note"
                 target="_blank"
                 className="text-blue-400 hover:underline"
                 rel="noreferrer noopener"
@@ -38,7 +38,7 @@ export const LandingPage = () => {
           <p>
             Quickly capture todos, thoughts. We have a{" "}
             <a
-              href="https://github.com/unvalley/ephe/blob/main/.github/guide.md"
+              href="https://github.com/devndesigner6/ephera-note/blob/main/.github/guide.md"
               target="_blank"
               rel="noreferrer noopener"
               className="text-blue-400 hover:underline"
@@ -66,7 +66,7 @@ export const LandingPage = () => {
         </a>
         <p>
           Source Code on{" "}
-          <a href="https://github.com/unvalley/ephe" className="text-blue-400 hover:underline">
+          <a href="https://github.com/devndesigner6/ephera-note" className="text-blue-400 hover:underline">
             GitHub
           </a>
         </p>

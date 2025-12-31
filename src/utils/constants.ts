@@ -1,18 +1,18 @@
 export const LOCAL_STORAGE_KEYS = {
-  EDITOR_CONTENT: "ephe:editor-content",
-  COMPLETED_TASKS: "ephe:completed-tasks",
-  SNAPSHOTS: "ephe:snapshots",
-  THEME: "ephe:theme",
-  EDITOR_WIDTH: "ephe:editor-width",
-  PAPER_MODE: "ephe:paper-mode",
-  PREVIEW_MODE: "ephe:preview-mode",
-  TOC_MODE: "ephe:toc-mode",
-  TASK_AUTO_FLUSH_MODE: "ephe:task-auto-flush-mode",
-  FONT_FAMILY: "ephe:font-family",
-  CURSOR_POSITION: "ephe:cursor-position",
-  DOCUMENTS: "ephe:documents",
-  ACTIVE_DOCUMENT_INDEX: "ephe:active-document-index",
-  EDITOR_MODE: "ephe:editor-mode",
-} as const satisfies Record<string, `ephe:${string}`>;
+  EDITOR_CONTENT: "ephera:editor-content",
+  COMPLETED_TASKS: "ephera:completed-tasks",
+  SNAPSHOTS: "ephera:snapshots",
+  THEME: "ephera:theme",
+  EDITOR_WIDTH: "ephera:editor-width",
+  PAPER_MODE: "ephera:paper-mode",
+  PREVIEW_MODE: "ephera:preview-mode",
+  TOC_MODE: "ephera:toc-mode",
+  TASK_AUTO_FLUSH_MODE: "ephera:task-auto-flush-mode",
+  FONT_FAMILY: "ephera:font-family",
+  CURSOR_POSITION: "ephera:cursor-position",
+  DOCUMENTS: "ephera:documents",
+  ACTIVE_DOCUMENT_INDEX: "ephera:active-document-index",
+  EDITOR_MODE: "ephera:editor-mode",
+} as const satisfies Record<string, `ephera:${string}`>;
 
-export const EPHE_VERSION = "0.0.1";
+export const EPHERA_VERSION = "0.0.1";

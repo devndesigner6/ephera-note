@@ -154,7 +154,7 @@ export const CommandMenu = ({
       const a = document.createElement("a");
       const date = new Date().toISOString().split("T")[0];
       a.href = url;
-      a.download = `ephe_${date}.md`;
+      a.download = `ephera_${date}.md`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -248,7 +248,7 @@ export const CommandMenu = ({
   };
 
   const goToGitHubRepo = () => {
-    window.open("https://github.com/unvalley/ephe", "_blank");
+    window.open("https://github.com/devndesigner6/ephera-note", "_blank");
     onClose();
   };
 
@@ -363,7 +363,7 @@ export const CommandMenu = ({
     });
     list.push({
       id: "github-repo",
-      name: "Go to Ephe GitHub Repo",
+      name: "Go to Ephera GitHub Repo",
       icon: <LinkIcon className="size-4" weight="light" />,
       perform: goToGitHubRepo,
     });
