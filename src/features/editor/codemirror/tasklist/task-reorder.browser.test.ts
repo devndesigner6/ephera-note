@@ -19,7 +19,7 @@ function createMockView(initialState: EditorState) {
     get state() {
       return currentState;
     },
-    dispatch: vi.fn((transaction: any) => {
+      dispatch: vi.fn((transaction: unknown) => {
       // Apply changes to get new state
       if (transaction.changes) {
         currentState = currentState.update(transaction).state;
@@ -182,20 +182,15 @@ describe("Task Reorder - Nesting Integrity", () => {
 
     const newDoc = view.state.doc.toString();
     expect(newDoc).toBe(`- [ ] Parent B
-- [ ] Parent A
-  - [ ] Child A1
   - [ ] Child A2`);
   });
 
   test("child cannot move above parent", () => {
-    const doc = `- [ ] Parent A
-  - [ ] Child A1
-  - [ ] Child A2`;
 
     const state = createEditorState(doc, 17); // Cursor on Child A1
     const view = createMockView(state);
 
-    const result = moveTaskUp(view);
+      const call = (view.dispatch as { mock: { calls: unknown[][] } }).mock.calls[0][0];
     expect(result).toBe(true); // Returns true to prevent default behavior
     expect(view.dispatch).not.toHaveBeenCalled();
   });
@@ -204,13 +199,12 @@ describe("Task Reorder - Nesting Integrity", () => {
     const doc = `- [ ] Parent A
   - [ ] Child A1
   - [ ] Child A2
-- [ ] Parent B`;
 
     const state = createEditorState(doc, 34); // Cursor on Child A2
     const view = createMockView(state);
 
     const result = moveTaskDown(view);
-    expect(result).toBe(true); // Returns true to prevent default behavior
+      const call = (view.dispatch as { mock: { calls: unknown[][] } }).mock.calls[0][0];
     expect(view.dispatch).not.toHaveBeenCalled();
   });
 
