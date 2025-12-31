@@ -35,7 +35,8 @@ const getDateString = (date: Date): string => {
   const cacheKey = `date_${time}`;
 
   if (dateStringCache.has(cacheKey)) {
-    return dateStringCache.get(cacheKey)!;
+    const cached = dateStringCache.get(cacheKey);
+    if (cached !== undefined && cached !== null) return cached;
   }
 
   const dateStr = date.toISOString().split("T")[0]; // YYYY-MM-DD
