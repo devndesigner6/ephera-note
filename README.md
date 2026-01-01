@@ -2,7 +2,7 @@
 <div align="center">
   <p>Epherav1.94</p>
   <a href="https://epherav1-94.app/landing">
-    <img width="80%" alt="epherav1.94-readme" src="https://github.com/devndesigner6/ephera-note/assets/123456789/ephera-screenshot.png" />
+    <img width="80%" alt="epherav1.94-readme" src=".github/assets/ephera-readme.png" />
   </a>
   <p>
     <a href="https://epherav1-94.app/landing">Epherav1.94</a> is a creative ephemeral markdown paper  
