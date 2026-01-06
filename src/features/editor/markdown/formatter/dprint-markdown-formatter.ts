@@ -1,5 +1,4 @@
 import { createFromBuffer, type GlobalConfiguration } from "@dprint/formatter";
-import { getPath } from "@dprint/markdown";
 import type { MarkdownFormatter, FormatterConfig } from "./markdown-formatter";
 
 /**
@@ -54,9 +53,9 @@ export class DprintMarkdownFormatter implements MarkdownFormatter {
       return new Uint8Array(arrayBuffer);
     }
 
-    // In Node.js environment, load WASM directly from file
-    // Note: This code won't be executed when bundled with Vite
+    // In Node.js environment, load WASM directly from file (dynamic imports keep browser bundle clean)
     const fs = await import("node:fs");
+    const { getPath } = await import("@dprint/markdown");
     const wasmPath = getPath();
     const buffer = fs.readFileSync(wasmPath);
     return new Uint8Array(buffer);
