@@ -3,8 +3,8 @@ export const LandingPage = () => {
     <div className="flex min-h-screen flex-col items-center justify-center bg-dots-paper px-4 py-20 antialiased">
       <div className="w-full max-w-lg space-y-12 sm:space-y-12">
         <div className="space-y-2 sm:space-y-2">
-          <p className="">
-            <samp>Ephera</samp> is :
+          <p>
+            <samp>Ephera</samp> is:
           </p>
           <ol className="list-inside list-decimal">
             <li>A markdown paper to organize your daily todos and thoughts.</li>
@@ -29,7 +29,7 @@ export const LandingPage = () => {
         </div>
 
         <div className="space-y-2 sm:space-y-2">
-          <h2 className="font-normal">Why :</h2>
+          <h2 className="font-normal">Why:</h2>
           <ul className="space-y-2">
             <li>- Most note and todo apps are overloaded.</li>
             <li>- I believe, just one page is enough for organizing.</li>
@@ -52,7 +52,7 @@ export const LandingPage = () => {
         <div className="my-10 flex justify-center">
           <a
             href="/"
-            className="rounded-md border border-neutral-400 px-3 py-1 text-neutral-400 transition-colors duration-300 hover:text-neutral-900 dark:border-netural-600 dark:text-neutral-400 dark:hover:border-neutral-100 dark:hover:text-neutral-100"
+            className="rounded-md border border-neutral-400 px-3 py-1 text-neutral-400 transition-colors duration-300 hover:text-neutral-900 dark:border-neutral-600 dark:text-neutral-400 dark:hover:border-neutral-100 dark:hover:text-neutral-100"
           >
             Try it out
           </a>
@@ -60,7 +60,7 @@ export const LandingPage = () => {
       </div>
 
       <footer className="text-center text-neutral-600 text-sm sm:text-base dark:text-neutral-400">
-        This project is made by hemanth
+        This project is made by Hemanth.
         <p>
           Source Code on{" "}
           <a href="https://github.com/devndesigner6/ephera-note" className="text-blue-400 hover:underline">
