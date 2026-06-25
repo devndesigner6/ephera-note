@@ -1,11 +1,11 @@
 
 <div align="center">
   <p>Epherav1.94</p>
-  <a href="https://epherav1-94.app/landing">
+  <a href="https://Ephera.in/landing">
     <img width="80%" alt="epherav1.94-readme" src="https://raw.githubusercontent.com/devndesigner6/ephera-note/main/.github/assets/ephera-readme.png" />
   </a>
   <p>
-    <a href="https://epherav1-94.app/landing">Epherav1.94</a> is a creative ephemeral markdown paper  
+    <a href="https://ephera.in/landing">Epherav1.94</a> is a creative ephemeral markdown paper  
     to organize your daily todos and thoughts.
   </p>
 </div>
